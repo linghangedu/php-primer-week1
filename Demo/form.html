@@ -8,7 +8,7 @@
 
 <form method="post" action="mailto:someone@gmail.com">
 
-    <p>name: <input type="text" name="visitor_name" size="35" placeholder="your name here"></p>
+    <p>name: <input type="text" name="visitor_name" size="35" placeholder="your name here" autofocus required></p>
 <p>password: <input type="password"/></p>
     <p>address: <input type="text" name="visitor_address" size="35"></p>
 
@@ -16,10 +16,23 @@
         state/province: <input type="text" name="visitor_state" size="25">
     </p>
 
+
+
+    <datalist id="country">
+        <option selected>united states
+            <option value="ddsds">australia</option>
+            <option>canada
+            <option>england
+    </datalist>
+    <input type="text" name="" value="" list="country">
+
+
+
     <p>country:
+
         <select name="visitor_country" size="1">
             <option selected>united states
-            <option value="ddsds">australia
+            <option value="ddsds">australia</option>
             <option>canada
             <option>england
             <option>france
@@ -57,9 +70,9 @@
     <input type="checkbox" name="interests" value="internet">surfing the net
     <input type="checkbox" name="interests" value="sport">sports in general
     <input type="checkbox" name="interests" value="other">other
-    
-    
-    
+
+
+
     <p><strong>seen any good websites lately? got a good story to tell? write
             them down or just say hi!!</strong></p>
 
